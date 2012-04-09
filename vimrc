@@ -41,8 +41,6 @@ set listchars=tab:>-,trail:·,eol:$
 
 inoremap jk <esc>
 inoremap kj <esc>
-noremap j gj
-noremap k gk
 
 cnoremap %% <C-R>=expand('%:p:h').'/'<cr>
 
@@ -57,7 +55,7 @@ nnoremap k gk
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 nnoremap <leader>( viw<esc>a'<esc>hbi'<esc>lel
-nnoremap <leader>r !ruby %
+
 nnoremap ; :
 
 filetype plugin indent on
