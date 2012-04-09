@@ -6,12 +6,53 @@ set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
+set listchars=tab:>\ ,trail:•,extends:>,precedes:<,nbsp:+
+set list
+set showmatch
+set cursorline
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
+
+set winwidth=84
+"We have to have a winheight bigger than we want to set winminheight. But if
+"we set winheight to be huge before winminheight, the winminheight set will
+"fail.
+set winheight=5
+set winminheight=5
+set winheight=999
+
+
+" make space the leader
+let mapleader = " "
+
+set ignorecase
+set smartcase
+
+set hlsearch
+set incsearch
+
+set listchars=tab:>-,trail:·,eol:$
+
+inoremap jk <esc>
+inoremap kj <esc>
+
+cnoremap %% <C-R>=expand('%:p:h').'/'<cr>
+
+map <leader>t :tabe %%
+map <leader>v :vsp %%
+map <leader>s :sp %%
+
+nnoremap <leader>h :set cursorcolumn
+
+nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
+nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
+nnoremap <leader>( viw<esc>a'<esc>hbi'<esc>lel
+
+nnoremap ; :
 
 filetype plugin indent on
 
@@ -49,6 +90,7 @@ if executable("ack")
 endif
 
 " Color scheme
+set t_Co=256
 colorscheme github
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
