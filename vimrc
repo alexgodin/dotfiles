@@ -1,12 +1,13 @@
-set nocompatible  " Use Vim settings, rather then Vi settings
-set nobackup
-set encoding=utf-8
-set nowritebackup
 set history=50
-set ruler         " show the cursor position all the time
-set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
+set nobackup
+set encoding=utf-8
+set nocompatible  " Use Vim settings, rather then Vi settings
+set noswapfile
+set nowritebackup
+set ruler         " show the cursor position all the time
+set showcmd       " display incomplete commands
 set listchars=tab:>\ ,trail:•,extends:>,precedes:<,nbsp:+
 set list
 set showmatch
@@ -129,4 +130,3 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
-
