@@ -55,7 +55,7 @@ nnoremap k gk
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 nnoremap <leader>( viw<esc>a'<esc>hbi'<esc>lel
-
+nnoremap <leader>r !ruby %
 nnoremap ; :
 
 filetype plugin indent on

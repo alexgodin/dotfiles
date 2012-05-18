@@ -6,6 +6,8 @@
 	name = alexgodin
 	email = alex@alexgodin.com
 [alias]
+  up = !git fetch origin && git rebase origin/master
+  mm = !git checkout master && git merge @{-1} --ff-only
   st = status
   c  = commit -m
   aa = add .
