@@ -2,3 +2,19 @@
   default = tracking
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+[user]
+	name = alexgodin
+	email = alex@alexgodin.com
+[alias]
+  st = status
+  c  = commit -m
+  aa = add .
+  ci = commit -am
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
+  plre = pull --rebase
+[github]
+	user = alexgodin
+	token = samuel

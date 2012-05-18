@@ -46,12 +46,14 @@ map <leader>t :tabe %%
 map <leader>v :vsp %%
 map <leader>s :sp %%
 
-nnoremap <leader>h :set cursorcolumn
+set cursorcolumn
+nnoremap j gj
+nnoremap k gk
 
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 nnoremap <leader>( viw<esc>a'<esc>hbi'<esc>lel
-
+nnoremap <leader>r !ruby %
 nnoremap ; :
 
 filetype plugin indent on
