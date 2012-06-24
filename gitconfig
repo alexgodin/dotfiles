@@ -18,3 +18,5 @@
 [github]
 	user = alexgodin
 	token = samuel
+[core]
+	excludesfile = /home/alex/.gitignore
