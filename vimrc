@@ -5,6 +5,7 @@ set nobackup
 set encoding=utf-8
 set nocompatible  " Use Vim settings, rather then Vi settings
 set noswapfile
+set encoding=utf-8
 set nowritebackup
 set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
