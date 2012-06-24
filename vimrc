@@ -1,5 +1,6 @@
 set nocompatible  " Use Vim settings, rather then Vi settings
 set nobackup
+set encoding=utf-8
 set nowritebackup
 set history=50
 set ruler         " show the cursor position all the time
