@@ -40,6 +40,8 @@ set listchars=tab:>-,trail:·,eol:$
 
 inoremap jk <esc>
 inoremap kj <esc>
+noremap j gj
+noremap k gk
 
 cnoremap %% <C-R>=expand('%:p:h').'/'<cr>
 
